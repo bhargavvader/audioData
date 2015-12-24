@@ -11,6 +11,7 @@ N = len(input_data[1])#600
 # sample spacing
 T = 1.0 / input_data[0]
 
+#Finding fft plot of input data
 yf = scipy.fftpack.fft(input_data[1])
 yf = yf[10:]
 xf = np.linspace(0.0, 1.0/(2.0*T), N/2)
