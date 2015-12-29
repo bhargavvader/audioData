@@ -1,1 +1,3 @@
 The scripts in this folder are used to perform a fast fourier transform on the time domain data to convert it into frequency domain and obtain a power spectrum. From this we can glean the frequency which corresponds to maximum power. This can be used to analyze whether the sound file contains speech or not and find the gender of the speaker.
+
+Update on 29/12/2015: Added harmonic.py - it finds out whether the highest peak in the FFT is the fundamental frequency or the first overtone.
