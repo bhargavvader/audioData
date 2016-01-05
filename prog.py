@@ -2,7 +2,7 @@ import scipy.io.wavfile as wav
 import matplotlib.pyplot as plt
 import numpy as np
 
-input_data = wav.read('testf.wav')
+input_data = wav.read('test2.wav')
 audio = input_data[1]
 audio = audio - audio.mean()
 rate = input_data[0]
@@ -19,25 +19,37 @@ s = np.std(audio)
 print "Variance: ", s**2
 print "Standard deviation: ", s
 lenS = len(audio)
-print(lenS)
+print("Size of Audio file is:", lenS)
 
 amplitude_threshold = 200
 window_size = 200
 time = lenS/rate
 averages = []
-print(time)
-
+print("Time of file is:", time)
 #### identifying the beginning baseline details
-beg_sample = rate/10
-beg_audio = audio[:beg_sample]
-noise = beg_audio.mean()
+for i in range(10,1000):
+	if abs(audio[0:1000]).mean() > 1000:
+		noise = 0
+		break
+	beg_sample = rate/(i/10)
+	beg_audio = audio[:beg_sample]
+	if beg_audio.max() > 500:
+		# print(beg_audio.max(),i)
+		continue
+	if beg_audio.max() < 500:
+		# print(beg_audio.max())
+		noise = abs(beg_audio).mean()
+		break
+print(i, "This is the baseline")
+print("Noise to be cancelled is: ", noise)
+# plt.show()
 audio = audio - noise
 
 for i in range(0, len(audio) - window_size):
 	averages.append(np.mean(audio[i:i+window_size]))
 
 
-print len(averages)
+# print len(averages)
 print('start checking')
 for i in range(len(averages)):
 	if averages[i] < amplitude_threshold and averages[i] > (0-amplitude_threshold):
