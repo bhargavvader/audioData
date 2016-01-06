@@ -7,7 +7,7 @@ data = np.array(wav.read('six-sec_kalam.wav')[1])
 
 zcr_array = []
 
-# Function to find zero crossing rate
+#Function to find zero crossing rate
 def zcr(signal):
 	zc = 0;
 	for i in range(len(signal)):
