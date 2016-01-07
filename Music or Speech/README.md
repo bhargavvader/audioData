@@ -7,17 +7,17 @@ Results we obtained:
 
 ### Music files:
 
-| Filename | Percentage of low energy frames | Mean of variance of ZCR |
-| :------: | :-----------------------------: | :---------------------: |
-| hello2   |  1.608%                         | 217.562                 |
-| six-sec_fire | 8.870%                      | 191.854                 |
-| six-sec_paradise | 0.0%                    | 215.462                 |
-| six-sec_paradise2 | 0.0%                   | 227.284                 |
-| stairway2         | 0.585%                 | 220.826                 |
-| stairway3         | 0.0%                   | 213.793                 |
-| stairway4         | 0.0%                   | 213.175                 |
-| six-sec_wonderwall | 0.0%                  | 330.768                 |
-| hello3             | 4.0%                  | 463.651                 |
+| Filename | Percentage of low energy frames | Mean of variance of ZCR | Mean of RMS values | Variance of RMS values |
+| :------: | :-----------------------------: | :---------------------: | :----------------: | :--------------------: |
+| hello2   |  1.608%                         | 217.562                 | 3754.354           | 4400.447               |
+| six-sec_fire | 8.870%                      | 191.854                 | 3739.978           | 4353.832               |
+| six-sec_paradise | 0.0%                    | 215.462                 | | |
+| six-sec_paradise2 | 0.0%                   | 227.284                 | | |
+| stairway2         | 0.585%                 | 220.826                 | | |
+| stairway3         | 0.0%                   | 213.793                 | | |
+| stairway4         | 0.0%                   | 213.175                 | | |
+| six-sec_wonderwall | 0.0%                  | 330.768                 | | |
+| hello3             | 4.0%                  | 463.651                 | | |
 
 
 ### Speech files:

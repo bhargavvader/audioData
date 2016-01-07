@@ -4,7 +4,7 @@ import numpy as np
 import wave
 
 music, speech = 0, 0
-data = np.array(wav.read('six-msec_jefferson2.wav')[1])
+data = np.array(wav.read('../WAV files/six-sec_fire.wav')[1])
 
 zcr_array = []
 
@@ -50,7 +50,7 @@ while ind+882<len(data):
 	x=zcr(d)
 	s = s + x
 	zcr_array.append(x)
-	ind += 441
+	ind += 882
 	count+=1
 	auto.append(autocorcoef(d))
 
