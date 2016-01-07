@@ -1,4 +1,7 @@
-zcr_rms.py finds the percentage of low energy frames in a sound file and the mean of the variance of zero crossing rates (ZCRs) for each second. The approach is based on [this paper](http://www.ee.columbia.edu/~dpwe/classes/e4810-2013-09/projects/cvcotton.pdf) by Courtenay Cotton, Columbia University.
+* zcr_rms.py finds the percentage of low energy frames in a sound file and the mean of the variance of zero crossing rates (ZCRs) for each second.
+* zcr_fin.py finds the mean and variance of the RMS values as well.
+
+The approach is based on [this paper](http://www.ee.columbia.edu/~dpwe/classes/e4810-2013-09/projects/cvcotton.pdf) by Courtenay Cotton, Columbia University.
 
 Results we obtained:
 
