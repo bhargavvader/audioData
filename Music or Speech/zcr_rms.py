@@ -3,7 +3,7 @@ import scipy.io.wavfile as wav
 import numpy as np
 import wave
 
-data = np.array(wav.read('audioData/WAV files/six-sec_kalam.wav')[1])
+data = np.array(wav.read('../WAV files/six-sec_steve.wav')[1])
 
 zcr_array = []
 

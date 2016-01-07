@@ -4,7 +4,7 @@ import numpy as np
 import wave
 
 music, speech = 0, 0
-data = np.array(wav.read('../WAV files/six-sec_fire.wav')[1])
+data = np.array(wav.read('../WAV files/six-sec_geoffrey.wav')[1])
 
 zcr_array = []
 
